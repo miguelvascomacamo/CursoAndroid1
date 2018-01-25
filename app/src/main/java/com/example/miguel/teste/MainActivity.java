@@ -1,5 +1,6 @@
 package com.example.miguel.teste;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +20,11 @@ public class MainActivity extends AppCompatActivity {
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Este eh o meu programa em android", Toast.LENGTH_LONG).show();
+
+                Intent meuIntent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(meuIntent);
+
+               // Toast.makeText(getApplicationContext(), "Este eh o meu programa em android", Toast.LENGTH_LONG).show();
 
             }
         });
