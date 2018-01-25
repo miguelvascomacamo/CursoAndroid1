@@ -15,5 +15,15 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/button_click" />
+
+    <Button
+        android:id="@+id/btnprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="17dp"
+        android:text="@string/button_thirtActivity" />
 </RelativeLayout>
 
