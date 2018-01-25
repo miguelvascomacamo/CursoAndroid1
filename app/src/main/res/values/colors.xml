@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="Colorgray">#777</color>
+    <color name="Clorbranco">#fff</color>
+    <color name="ColorEe">#777777</color>
 </resources>
