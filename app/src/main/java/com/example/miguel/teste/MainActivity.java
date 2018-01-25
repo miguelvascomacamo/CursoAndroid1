@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Este eh o meu programa em android", Toast.LENGTH_LONG).show();
-               
+
             }
         });
 
