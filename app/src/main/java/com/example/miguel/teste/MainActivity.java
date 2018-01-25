@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bt1, btprogress;
+    Button bt1, btprogress, btnwebview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         secondAcrivity();
         callingThirdActivity();
+        webview();
     }
 
 
@@ -48,5 +49,17 @@ public class MainActivity extends AppCompatActivity {
            }
        });
 
+    }
+
+    private void webview () {
+        btnwebview = (Button) findViewById(R.id.btnwebview);
+
+        btnwebview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent web = new Intent(MainActivity.this, WebViewActivity.class);
+                startActivity(web);
+            }
+        });
     }
 }
