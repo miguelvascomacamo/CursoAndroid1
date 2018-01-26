@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button bt1, btprogress, btnwebview;
+    Button bt1, btprogress, btnwebview, btnperfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,4 +62,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+   private void perfilCallling () {
+     btnperfil = (Button) findViewById(R.id.button3);
+
+     btnperfil.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View view) {
+             Intent perfil = new Intent(MainActivity.this, PerfilActivity.class);
+             startActivity(perfil);
+         }
+     });
+   }
+
 }
+
+

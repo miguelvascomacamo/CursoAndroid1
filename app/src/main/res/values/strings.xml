@@ -4,4 +4,5 @@
     <string name="button_click">Click me</string>
     <string name="button_thirtActivity">ProgressBar</string>
     <string name="butto_webview_Activity">Webview</string>
+    <string name="title_activity_perfil">PerfilActivity</string>
 </resources>
