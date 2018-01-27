@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         secondAcrivity();
         callingThirdActivity();
         webview();
+        perfilCallling();
     }
 
 
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
      btnperfil.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View view) {
-             Intent perfil = new Intent(MainActivity.this, PerfilActivity.class);
+             Intent perfil = new Intent(MainActivity.this, Perfil2Activity.class);
              startActivity(perfil);
          }
      });
